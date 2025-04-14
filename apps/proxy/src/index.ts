@@ -52,4 +52,9 @@ app.get("/_next/*", async (c) => {
   return c.body(new Uint8Array(body), 200, { "content-type": contentType });
 });
 
+// wsもproxyする
+// app.get("/_next/webpack-hmr", async (c) => {
+//   return await fetch(`http://localhost:3002/_next/webpack-hmr`);
+// });
+
 serve({ fetch: app.fetch, port: 2999 });
