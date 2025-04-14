@@ -1,8 +1,13 @@
+import { ChatTest } from "./ChatTest";
+
 export default function Home() {
   return (
     <div>
-      <main>sss</main>
-      <footer>fff</footer>
+      <main>
+        ChatTest↓
+        <ChatTest />
+        ChatTest↑
+      </main>
     </div>
   );
 }
